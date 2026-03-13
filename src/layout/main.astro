@@ -1,0 +1,18 @@
+---
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>instrumento</title>
+    <ClientRouter />
+  </head>
+  <body class="flex h-screen w-full flex-col items-center justify-center">
+    <slot />
+  </body>
+</html>
